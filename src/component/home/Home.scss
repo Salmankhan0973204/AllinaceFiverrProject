@@ -1,0 +1,43 @@
+.home{
+.home-body{
+   
+      width: 98vw;
+     height: 100vh;
+      background: url("../../assets/img/homebg.png" ); 
+      background-repeat: no-repeat;
+      background-position: fixed;
+      background-size: cover;
+    
+     
+}
+.home-body-contant-title{
+    font-size: 48px;
+    font-weight: 700;
+}
+.home-body-contant-body{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(128, 120, 120);
+
+}
+.home-body-contant-button{
+    background: #20cce8!important;
+    border: 2px solid #20cce8;
+    border-radius: 50px;
+    width: 25rem;
+    font-size: 20px;
+    padding: 8px;
+    color: #fff;
+    font-weight: 500;
+   
+
+}
+.home-body-contant-button:hover{
+    color:#20cce8!important; 
+    background: #fff !important;
+    border: 2px solid #20cce8 !important;
+}
+
+
+
+}

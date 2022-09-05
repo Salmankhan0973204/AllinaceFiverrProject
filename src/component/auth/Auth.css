@@ -1,0 +1,61 @@
+.auth-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.forgotPassword {
+  color: #20b9e8;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.not-a-member {
+  color: gray;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.error {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f03232;
+  text-align: center;
+}
+
+.social-icon {
+  width: 110px;
+  height: 50px;
+  border: 1px solid #c7c2c2;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background: #fcf9f9;
+}
+
+.css-1v8s45v-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #fff !important;
+  color: #20b9e8;
+  border: 1px solid #20b9e8;
+}
+
+.signup-title {
+  color: #20b9e8;
+}
+
+.signup-contant {
+  font-size: 14px;
+}
+/*# sourceMappingURL=Auth.css.map */

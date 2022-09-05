@@ -33,26 +33,26 @@ header.header-default, header.header-scrolled, header.header-property {
    
   }
   .btn-login {
-    color: #20cce8!important;
+    color: #20b9e8!important;
     background-color: transparent;
-    border: 2px solid #20cce8;
+    border: 2px solid #20b9e8;
     border-radius: 10px;
   }
   .btn-login:hover{
     color: #fff!important;
-   background:#20cce8 ;  
+   background:#20b9e8 ;  
  
 
 }
 
   .btn-logout {
     color: #fff!important;
-    background-color: #20cce8;
+    background-color: #20b9e8;
     border-radius: 10px;
   }
   .btn-logout:hover{
-    color:#20cce8!important;
-    border: 2px solid #20cce8;  
+    color:#20b9e8!important;
+    border: 2px solid #20b9e8;  
 
 }
  

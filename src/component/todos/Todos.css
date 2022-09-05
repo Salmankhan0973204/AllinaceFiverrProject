@@ -1,0 +1,272 @@
+.task :root {
+  --header-height: 3rem;
+  --nav-width: 68px;
+  /* --first-color: #f10086; */
+  /* --first-color-alt: #f582a7; */
+  --white-color: #f3ebef;
+}
+
+.task * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.task a {
+  text-decoration: none;
+}
+
+.task ul {
+  list-style: none;
+}
+
+.task main {
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.task .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: var(--header-height);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--white-color);
+  padding: 0 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.task .header-toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.task .sidebar {
+  position: fixed;
+  top: 0;
+  left: -30%;
+  height: 100vh;
+  width: var(--nav-width);
+  background-color: whitesmoke;
+  padding-top: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.task .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  height: 100%;
+}
+
+.task .nav-logo,
+.task .dashboard-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.task .nav-logo {
+  margin-bottom: 2rem;
+}
+
+.task .nav-logo-icon {
+  font-size: 1.25rem;
+  /* color: var(--white-color); */
+  cursor: pointer;
+}
+
+.task .nav-logo-name {
+  font-weight: 700;
+  /* color: var(--white-color); */
+}
+
+.task .nav-link {
+  position: relative;
+  color: var(--first-color-alt);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 1.5rem;
+}
+
+.task .nav-link:hover {
+  color: var(--white-color);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.task .active {
+  /* color: var(--white-color); */
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.task .active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 38px;
+  width: 3px;
+  background-color: var(--white-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.task .show {
+  left: 0;
+}
+
+.task .space-toggle {
+  padding-left: calc(var(--nav-width) + 1rem);
+}
+
+@media screen and (min-width: 768px) {
+  .task main {
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
+    padding: 0 1rem 0 calc(var(--nav-width) + 2rem);
+  }
+  .task .header {
+    height: calc(var(--header-height) + 1rem);
+    padding-left: calc(var(--nav-width) + 2rem);
+  }
+  .task .sidebar {
+    left: 0;
+    padding: 1rem 0 0 0;
+  }
+  .task .show {
+    width: calc(var(--header-height) + 156px);
+  }
+  .task .space-toggle {
+    padding-left: calc(var(--nav-width) + 188px);
+  }
+}
+
+.task .main_div {
+  margin-top: 2rem;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.task .centre_div {
+  width: 90%;
+  margin-top: 10px;
+  min-height: 80vh;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.task h1 {
+  color: white;
+  background: transparent;
+  background-color: #9031a8;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* .task button:hover {
+  background-color: #20bf6b;
+} */
+
+.task ol li {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.task .btn {
+  margin-left: 30px;
+}
+
+.task .items {
+  right: 150px;
+  width: 120px;
+  text-align: start;
+}
+
+.task .todo_style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+.deleteIcon{
+ border: none;
+ border: 1px solid white !important;
+
+}
+
+.task input {
+  height: 40px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.task .add-btn {
+  width: 30px;
+}
+
+.task .delele {
+  width: 100px;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14PX;
+}
+/*# sourceMappingURL=Todos.css.map */

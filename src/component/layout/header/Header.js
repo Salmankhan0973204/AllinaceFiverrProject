@@ -1,15 +1,16 @@
-import React from "react";
+
 import "./Header.css";
 import globe from "../../../assets/img/globe.svg";
-
 import toggleImage from "../../../assets/img/switchIcon.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  
   return (
     <div>
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand  ms-lg-4" href="#"/>
+      <nav className="navbar navbar-expand-lg ">
+        <div className="container-fluid">
+          <a className="navbar-brand  ms-lg-4" href="#"/>
           <span className="logo"> Alliance.</span> 
           <button
             class="navbar-toggler  float-end"
@@ -20,7 +21,7 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
             className="collapse navbar-collapse d-fle"
@@ -28,7 +29,7 @@ const Header = () => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a class="nav-link">
+                <a className="nav-link">
                  
                   <img src={toggleImage} width="70px" />
                 </a>
@@ -46,16 +47,16 @@ const Header = () => {
               </li>
               <li className="nav-item">
                
-                <a className="nav-link">
+                <Link to="/signup" className="nav-link">
                  
                   <button className="btn btn-logout ">Sign Up</button>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                
-                <a className="nav-link">
+              <Link to="/signin" className="nav-link">
                   <button className="btn btn-login">Login</button>
-                </a>{" "}
+                </Link>
               </li>
             </ul>
           </div>
